@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin:0;
+}
+h1{
+    text-align: center;
+}
+.bg-container{
+    background-image:linear-gradient(to bottom,pink,white);
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    height:100vh;
+}
+
+img{
+    border-radius:83px;
+    
+}
+
+span{
+    color:orange;
+    font-family: caveat;
+    font-size:24px;
+   
+    
+}
+.form-card{
+    background-color:white;
+    height:57vh;
+    width:45vw;
+    box-shadow:5px 5px 4px black ;
+    border-radius:32px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin:10px;
+    border-color:lightblue;
+    border-right:6px solid red;
+    border-top:none;
+    border-bottom:none;
+    border-left:none;
+    
+}
+input{
+    background-color:transparent;
+    border-radius:22px;
+    border-width:1px;
+    border-color:lightblue;
+    border-right:none;
+    border-top:none;
+    border-bottom:none;
+    border-left:2px dotted maroon;
+    padding:18px;
+    margin:8px;
+}
+button{
+    background-color:lightblue;
+    font-family:caveat;
+     border-radius:22px;
+    border-width:1px;
+    margin:8px;
+}
+.p{
+    padding-top:19px;
+    margin:8px;
+}
+.a{
+    
+    text-align: center;
+
+}
+    </style>
+</head>
+<body>
+    <div class='bg-container'>
+        <div>
+            <img src='https://i.ibb.co/37WrP10/Screenshot-222.png'/>
+            <p>Embrace the journey,into <span>Zx</span></p>
+        </div>
+        <div>
+            <h1>Login Here</h1>
+            <form action='/login' method='POST'>
+                <div class='form-card'>
+                    <input type='email' name="email" placeholder="Enter Email..." autocomplete="off" required/><br><br>
+                    <input type='password' name="password" placeholder='Enter Password...' autocomplete="off" required/><br><br>
+                    <button type='submit'>SIgn In</button>
+                    <p class='p'>Create A/c <a href='/register' >Sign up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+
+h1{
+    text-align:center;
+}
+.bg-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-card {
+    background-color: white;
+    height: 87vh;
+    width: 65vw;
+    box-shadow: 5px 5px 4px black;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    border-color: lightblue;
+    border-right: 6px solid red;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+
+}
+
+input {
+    background-color: transparent;
+    border-radius: 22px;
+    border-width: 1px;
+    border-color: lightblue;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: 2px dotted maroon;
+    padding: 18px;
+    margin: 8px;
+}
+
+button {
+    background-color: lightblue;
+    font-family: caveat;
+    border-radius: 22px;
+    border-width: 1px;
+    margin: 8px;
+}
+    </style>
+</head>
+<body>
+    <div class='bg-container'>
+        <h1>Register Here </h1>
+        <form action='/register' method='POST'>
+            <div class='form-card'>
+                <input type='text' name='name' placeholder='Enter Name..' autocomplete="off" class="'form-control" required/><br><br>
+                <input type='email' name="email" placeholder="Enter Email..." autocomplete="off" required /><br><br>
+                <input type='password' name="password" placeholder='Enter Password...' required/><br><br>
+                <button type='submit'>SIgn up</button>
+                <p class='p'>Already A/c <a href='/login'>Sign in</a></p>
+            </div>
+        </form>
+        </div>
+</body>
+</html>

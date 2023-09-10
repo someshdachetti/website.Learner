@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/b9470282ec.js" crossorigin="anonymous"></script>
+
+    <title>Home Page</title>
+    <style>
+        
+* {
+    margin: 0px;
+}
+
+.bg-color {
+    background-image: linear-gradient(to right, pink, white);
+    background-size: cover;
+    height: 300%;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.discription-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+
+}
+
+.our-Team {
+    margin: 10px;
+    background-color: transparent;
+    border-width: 0px;
+}
+
+.Ratings {
+    margin: 10px;
+    background-color: transparent;
+    border-width: 0px;
+}
+
+.sign-in {
+    margin: 10px;
+    background-color: pink;
+    border-width: 0px;
+    color: white;
+    border-radius: 8px;
+
+}
+
+.sign-in:hover {
+    background-color: maroon;
+    color: white;
+    text-decoration: underline;
+    border-width: 1px;
+    height: 5vh;
+    width: 5vw;
+}
+
+#hr {
+    color: black;
+    font-size: 33px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+}
+
+.span {
+    color: lightsalmon;
+    font-family: serif;
+    text-decoration: underline;
+}
+
+.heading {
+    color: black;
+    font-size: 39px;
+    font-family: cursive;
+    margin: 10px;
+}
+
+.para {
+    color: black;
+    font-size: 15px;
+    font-family: caveat;
+    margin: 10px;
+}
+
+.img {
+    border-radius: 100px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.6);
+    position: relative;
+}
+
+.copyright-container {
+    background-color: transparent;
+
+    height: 5vh;
+    width: 100vw;
+}
+
+.buy-seel-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.lowPrice{
+    text-align: center;
+}
+
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 22px;
+}
+
+.detailes-container {
+    margin: 10px;
+    padding: 12px;
+}
+
+.price {
+    text-decoration: line-through;
+    color: red;
+}
+
+h3 {
+    padding: 12px;
+}
+
+p {
+    padding: 12px;
+}
+
+.container {
+    margin: 10px;
+}
+
+
+.postContainer{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    margin-top:16px;
+}
+.span{
+    color:orange;
+}
+
+.container {
+    display: flex;
+    gap: 550px;
+}
+
+
+#posts {
+    width: 400px;
+}
+
+#posts div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options {
+    display: flex;
+    gap: 125px;
+    margin:6vh;
+}
+
+i {
+    cursor: pointer;
+}
+
+#msg {
+    color: red;
+    margin: 10px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="bg-color">
+        <div class="logo-container">
+            <h1>Zx</h1>
+            <div class="discription-container">
+                <button class="our-Team">ourTeam</button>
+                <button class="Ratings">Ratings</button>
+                
+            </div>
+        </div>
+        <hr id="hr">
+        <div class="about-container">
+            <div>
+                <h1 class="heading">Price is what you <span class="span">pay</span> ,<br> Value is what you get.</h1>
+                <p class="para">Beyond the numerical exchange<br> of currency, it delves into the deeper<br> significance of value.</p>
+                
+            </div>
+
+            <div>
+                <img class="img" src="https://i.ibb.co/37WrP10/Screenshot-222.png" alt="ZxLOgo" />
+            </div>
+        </div>
+        <hr>
+        
+
+        <div class='bg-img'>
+            <h1 class="lowPrice"><span class='span'>Zx</span> present Low offer Budget Items</h1>
+            <div class='item-container'>
+                <div class='container'>
+                    <img src="https://i.ibb.co/1rd9npd/bike.png" alt="bike" />
+                    <div class='detailes-container'>
+                        <h3>name :Ktm</h3>
+                        <p class='price'>price :$99</p>
+                        <p>deal prize : $66</p>
+                        <p>milez : 30 <i class="fas fa-gas-pump"></i></p>
+                        <span class="delete-button" onclick="deleteContainer(this)">Delete</span>
+                    </div>
+                </div>
+    
+                <div class='container'>
+                    <img src="https://i.ibb.co/YR2zh52/cycle.png" alt="cycle" />
+                    <div class='detailes-container'>
+                        <h3>name :cycle</h3>
+                        <p class='price'>price :$23</p>
+                        <p>deal prize : $16</p>
+                        <p>Speciality : Gear Cycle <i class="fas fa-regular fa-bicycle"></i></p>
+                    </div>
+                </div>
+    
+                <div class='container'>
+                    <img src="https://i.ibb.co/Q8nWpg1/iphone.png" alt="iphone" />
+                    <div class='detailes-container'>
+                        <h3> name : Iphone 14 Pro</h3>
+                        <p class='price'>price :$69</p>
+                        <p>deal prize : $33</p>
+                        <p>Battery Pick Up <i class="fas fa-battery-full"></i></p>
+                    </div>
+                </div>
+    
+                <div class='container'>
+                    <img src="https://i.ibb.co/LNGRstF/lap-top.png" alt="lap-top" />
+                    <div class='detailes-container'>
+                        <h3>Laptop</h3>
+                        <p class='price'>price :$9</p>
+                        <p>deal prize : $6</p>
+                        <p>12th Genration <i class="fa-solid fa-laptop"></i></p>
+                    </div>
+                </div>
+    
+            </div>
+            
+        </div>
+    
+
+        <div class="postContainer">
+        <h1>Let's Contacts <span class='span'>ZX</span> Servies Now</h1><br><br>
+    <div class="container">
+        <div class="left">
+            <form id="form">
+                <label >Write your Sell item Here :</label>
+                <br><br>
+                <textarea  id="input" cols="30" rows="10"></textarea>
+                <br><br>
+                <div id="msg"></div>
+                <button type="submit">Post</button>
+            </form>
+        </div>
+        <div class="right">
+            <h3>Your posts : </h3>
+            <div id="posts">
+                
+                
+            </div>
+        </div>
+    </div>
+   </div>    
+
+
+    <script>
+
+        let form = document.getElementById('form');
+let input = document.getElementById('input');
+let msg = document.getElementById('msg');
+let post = document.getElementById('posts');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    formValidate();
+});
+
+let formValidate = () => {
+    if (input.value === '') {
+        msg.innerHTML = '*Post can\'t be Empty ';
+    } else {
+        msg.innerHTML = '';
+        acceptedData();
+    }
+};
+
+let collectedData = {};
+
+let acceptedData = () => {
+    collectedData['text'] = input.value;
+
+    creatingPost();
+};
+
+let creatingPost = () => {
+    post.innerHTML += `
+   <div>
+        <p>${collectedData.text}</p>
+            <span class="options">
+            <i onClick="editPost(this)" class="fas fa-edit"></i>
+            <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+          </span>
+    </div>
+   `;
+    input.value = "";
+};
+
+let deletePost = (deleteIcon) => {
+    deleteIcon.parentElement.parentElement.remove();
+};
+
+let editPost = (edit) => {
+    input.value = edit.parentElement.previousElementSibling.innerHTML;
+    edit.parentElement.parentElement.remove();
+};
+    </script>
+</body>
+</html>
