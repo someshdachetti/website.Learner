@@ -3,359 +3,452 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="index.css" rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/b9470282ec.js" crossorigin="anonymous"></script>
-
     <title>Home Page</title>
-    <style>
-        
-* {
-    margin: 0px;
-}
-
-.bg-color {
-    background-image: linear-gradient(to right, pink, white);
-    background-size: cover;
-    height: 300%;
-}
-
-.logo-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.discription-container {
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
-
-}
-
-.our-Team {
-    margin: 10px;
-    background-color: transparent;
-    border-width: 0px;
-}
-
-.Ratings {
-    margin: 10px;
-    background-color: transparent;
-    border-width: 0px;
-}
-
-.sign-in {
-    margin: 10px;
-    background-color: pink;
-    border-width: 0px;
-    color: white;
-    border-radius: 8px;
-
-}
-
-.sign-in:hover {
-    background-color: maroon;
-    color: white;
-    text-decoration: underline;
-    border-width: 1px;
-    height: 5vh;
-    width: 5vw;
-}
-
-#hr {
-    color: black;
-    font-size: 33px;
-}
-
-.about-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-
-}
-
-.span {
-    color: lightsalmon;
-    font-family: serif;
-    text-decoration: underline;
-}
-
-.heading {
-    color: black;
-    font-size: 39px;
-    font-family: cursive;
-    margin: 10px;
-}
-
-.para {
-    color: black;
-    font-size: 15px;
-    font-family: caveat;
-    margin: 10px;
-}
-
-.img {
-    border-radius: 100px;
-    box-sizing: border-box;
-    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.6);
-    position: relative;
-}
-
-.copyright-container {
-    background-color: transparent;
-
-    height: 5vh;
-    width: 100vw;
-}
-
-.buy-seel-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-
-}
-
-.lowPrice{
-    text-align: center;
-}
-
-
-.item-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 22px;
-}
-
-.detailes-container {
-    margin: 10px;
-    padding: 12px;
-}
-
-.price {
-    text-decoration: line-through;
-    color: red;
-}
-
-h3 {
-    padding: 12px;
-}
-
-p {
-    padding: 12px;
-}
-
-.container {
-    margin: 10px;
-}
-
-
-.postContainer{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items:center;
-    margin-top:16px;
-}
-.span{
-    color:orange;
-}
-
-.container {
-    display: flex;
-    gap: 550px;
-}
-
-
-#posts {
-    width: 400px;
-}
-
-#posts div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.options {
-    display: flex;
-    gap: 125px;
-    margin:6vh;
-}
-
-i {
-    cursor: pointer;
-}
-
-#msg {
-    color: red;
-    margin: 10px;
-}
-
-
-
-    </style>
+    <script src="https://kit.fontawesome.com/b9470282ec.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="bg-color">
-        <div class="logo-container">
-            <h1>Zx</h1>
-            <div class="discription-container">
-                <button class="our-Team">ourTeam</button>
-                <button class="Ratings">Ratings</button>
-                
-            </div>
-        </div>
-        <hr id="hr">
-        <div class="about-container">
-            <div>
-                <h1 class="heading">Price is what you <span class="span">pay</span> ,<br> Value is what you get.</h1>
-                <p class="para">Beyond the numerical exchange<br> of currency, it delves into the deeper<br> significance of value.</p>
-                
-            </div>
-
-            <div>
-                <img class="img" src="https://i.ibb.co/37WrP10/Screenshot-222.png" alt="ZxLOgo" />
-            </div>
-        </div>
-        <hr>
-        
-
-        <div class='bg-img'>
-            <h1 class="lowPrice"><span class='span'>Zx</span> present Low offer Budget Items</h1>
-            <div class='item-container'>
-                <div class='container'>
-                    <img src="https://i.ibb.co/1rd9npd/bike.png" alt="bike" />
-                    <div class='detailes-container'>
-                        <h3>name :Ktm</h3>
-                        <p class='price'>price :$99</p>
-                        <p>deal prize : $66</p>
-                        <p>milez : 30 <i class="fas fa-gas-pump"></i></p>
-                        <span class="delete-button" onclick="deleteContainer(this)">Delete</span>
-                    </div>
-                </div>
-    
-                <div class='container'>
-                    <img src="https://i.ibb.co/YR2zh52/cycle.png" alt="cycle" />
-                    <div class='detailes-container'>
-                        <h3>name :cycle</h3>
-                        <p class='price'>price :$23</p>
-                        <p>deal prize : $16</p>
-                        <p>Speciality : Gear Cycle <i class="fas fa-regular fa-bicycle"></i></p>
-                    </div>
-                </div>
-    
-                <div class='container'>
-                    <img src="https://i.ibb.co/Q8nWpg1/iphone.png" alt="iphone" />
-                    <div class='detailes-container'>
-                        <h3> name : Iphone 14 Pro</h3>
-                        <p class='price'>price :$69</p>
-                        <p>deal prize : $33</p>
-                        <p>Battery Pick Up <i class="fas fa-battery-full"></i></p>
-                    </div>
-                </div>
-    
-                <div class='container'>
-                    <img src="https://i.ibb.co/LNGRstF/lap-top.png" alt="lap-top" />
-                    <div class='detailes-container'>
-                        <h3>Laptop</h3>
-                        <p class='price'>price :$9</p>
-                        <p>deal prize : $6</p>
-                        <p>12th Genration <i class="fa-solid fa-laptop"></i></p>
-                    </div>
-                </div>
-    
-            </div>
-            
-        </div>
-    
-
-        <div class="postContainer">
-        <h1>Let's Contacts <span class='span'>ZX</span> Servies Now</h1><br><br>
-    <div class="container">
-        <div class="left">
-            <form id="form">
-                <label >Write your Sell item Here :</label>
-                <br><br>
-                <textarea  id="input" cols="30" rows="10"></textarea>
-                <br><br>
-                <div id="msg"></div>
-                <button type="submit">Post</button>
-            </form>
-        </div>
-        <div class="right">
-            <h3>Your posts : </h3>
-            <div id="posts">
-                
-                
-            </div>
-        </div>
-    </div>
-   </div>    
-
-
-    <script>
-
-        let form = document.getElementById('form');
-let input = document.getElementById('input');
-let msg = document.getElementById('msg');
-let post = document.getElementById('posts');
-
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    formValidate();
-});
-
-let formValidate = () => {
-    if (input.value === '') {
-        msg.innerHTML = '*Post can\'t be Empty ';
-    } else {
-        msg.innerHTML = '';
-        acceptedData();
+<style>
+    *{
+        margin:0px;
     }
-};
+    body{
+        background-color: #a6959a;
+        height:100%;
+    }
+   .background-color{
+    background-image:linear-gradient(to bottom,pink,maroon);
+    height:200vh;
+   }
+    .navBarItems{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-around;
+        align-items:center;
+        padding-top:17px;
+    }
+    .logo{
+        height:7vh;
+        width:6vw;
+        
+    }
+    .IconContainer{
+        display:flex;
+        flex-direction:row;
+        
+            
+    }
+    i{
+        padding-left:4px;
+    }
+    .button{
+        height:9vh;
+        width:6vw;
+        border-radius:10px;
+        border-width:0px;
+        background-color: transparent;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color:black;  
+        color:white;
+    }
+    .icon{
+        padding-top:6px;
+    }
+    nav{
+        display:flex;
+        flex-direction:row;
+    }
 
-let collectedData = {};
+    a{
+        position:relative;
+        text-decoration: none;
+        color:black;    
+        margin:26px;
+        padding:0 10px;
+        
+    }
+    a:after{
+        content: "";
+        position:absolute;
+        background-color:#ff3c78;
+        height:3px;
+        width:0%;
+        left:0;
+        bottom:-10px;
+        transition:0.3s;
+    }
+    a:hover{
+        color:#fff;
+    }
+    a:hover:after{
+        width:100%;
+    }
+     .span{
+        color:crimson;
+     }
+     .theameOfPage{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+        align-items:center;
+        margin-top:10%;
+     }
+     .About-book{
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:flex-start;
+        margin-top:20px;
+     }
+     .search-box{
+        background:rgba(255,255, 255,0.2);
+        border-radius:60px;
+        width:100%;
+        height:4vh;
+        display:flex;
+        align-items: center;
+        justify-content:space-evenly;
+        margin-top:10px;
 
-let acceptedData = () => {
-    collectedData['text'] = input.value;
+     }
+     .input{
+        background:transparent;
+        outline: none;
+        border:0px;
+        display:flex;
+        flex:1;
+        padding-left:22px;
+        
+     }
+     .loading-spinner{
+        display: none;
+        position:fixed;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
 
-    creatingPost();
-};
+    }
+    .spinner{
+        border:4px  solid rgba(255,255, 255,0.3);
+        border-top: 4px solid #ff3c78;
+        width:40px;
+        height: 40px;
+        animation:spin 1s linear infinite;
 
-let creatingPost = () => {
-    post.innerHTML += `
-   <div>
-        <p>${collectedData.text}</p>
-            <span class="options">
-            <i onClick="editPost(this)" class="fas fa-edit"></i>
-            <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
-          </span>
+    }
+    @keyframes spin{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform:rotate(360deg);
+        }
+    }
+     
+     .ii{
+        margin-top:7%;
+     }
+     .book-container{
+        background-color:beige;
+        height:30vh;
+        width:45vw;
+        box-shadow: 5px 5px 5px 0.9;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        margin:10px;
+        border-radius:19px;
+     }
+     .discription-container{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+     }
+     .image{
+        height:18vh;
+        width:10vw;
+        border-color:crimson;
+        
+     }
+     .AboutUsContainer{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        margin-top:10%;
+     }
+     .about-us{
+        background-color: #a6959a;       
+        height:50vh;
+        max-width:89vw;
+        box-shadow: 6px 6px 10px #888 ;
+        margin-top:19px;
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-top:10%;
+        
+        
+     }
+     .p{
+        text-align: center;
+        
+     }
+     .h1{
+        text-align:center;
+        margin-top:10%;
+        margin-bottom:-10%;
+     }
+     .whyChooseUsContainer{
+        
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        margin-top:10%;
+     }
+     #WHyChoseUs{
+        background-color: #a6959a;       
+        height:50vh;
+        max-width:89vw;
+        box-shadow: 6px 6px 10px #888 ;
+        margin-top:10%;
+        display:flex;
+        justify-content: space-around;
+        align-items:center;
+        margin-top:10%;
+
+     }
+     .zz{
+        margin-left:8%;
+        }
+        .x{
+            display:flex;
+            flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        }
+        #message{
+            color:red;
+            font-size:bolder;
+            text-align: center;
+        }
+        .formInput{
+            background: transparent;
+            border-color: maroon;
+            border-top:none;
+            border-bottom: none;
+            border-right:none;
+            margin-top: 12%;
+            padding-left:10%;
+
+        }
+        .submit-button{
+            color:white;
+            background-color: blueviolet;
+            border-radius:10px;
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items:flex-end;
+            border-color:0px;
+
+        }
+        textarea{
+            margin-left:18%;
+        }
+        .form-container{
+            background:#888;
+            height:10%;
+            width:36%;
+            border-color:black;
+            border-width:1px;
+            border-radius:9px;
+            display:flex;
+            flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        
+        }
+
+        #form{
+            display:none;
+        }
+        .close-form{
+            position:relative;
+            top:90%;
+            left:100%;
+            background-color:red;
+            border-radius:20px;
+            color:black;
+            border-width:0px;
+
+
+
+        }
+</style>
+<body>
+    <div class="navBarItems">
+        <img class="logo" src="https://i.ibb.co/GF1SJr4/Books-Logo.png" alt="Books"/>
+        <nav>
+            <a href="#About Us"><i class="fab fa-autoprefixer"></i>bout Us <i class="fas fa-address-card"></i></a>
+            <a  href="#whyChooseUs"><i id ="whyChoseUs" class="fa-solid fa-w"></i> hy Choose Us... <i class="fas fa-question"></i></a>
+            <a ><button id="getBook" class="button">Get Book <i class="ii fas fa-book"></i></button></a>
+            
+            <div class="form-container">
+                <form id="form">
+                    <button class="close-form">X</button>
+                    <input class="formInput" type="text" placeholder="Enter Title of Book"/><br><br>
+                    <input class="formInput" type="text" placeholder="Enter Author of Book"/><br><br>
+                    <textarea class="formInput" name="textarea" id="textarea" cols="13" rows="4" placeholder="write Comments.."></textarea><br><br>
+                    <button class="submit-button" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </nav>        
     </div>
-   `;
-    input.value = "";
-};
+    <div class="theameOfPage">
+        <div class="About-book">
+            <h2>Your Fate<br> Decide by a <span class="span">Book</span> Only</h2>
+            <div class="search-box">
+                <input class="input" id="searchItem" type="search" placeholder="Get Book.." />
+                <i class=" i fas fa-magnifying-glass"></i>
+                <div id="loading" class="loading-spinner">
+                    <div class="spinner">  
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+            <img src="https://i.ibb.co/q9cCv3Y/peakpx.jpg" alt="Book"/>
+        </div>
+    </div>
+    <p id ='message'></p>
+    <div id ="cardContainer" class="x">
+    <div  id ="BookContainer" class="books-container"> 
+    </div>
+    </div>
+    <h1 class="h1">About Us</h1>
+    <div class="AboutUsContainer">
+        
+        <div class="about-us">
+            <div>
+            <img src="https://i.ibb.co/BTFzZ5D/books-1423387.jpg" alt="books-1423387" />
+            </div>
+            <p class="p"> Books are a uniquely portable magic." - Stephen King<br>
+                There is no friend as loyal as a book." - Ernest Hemingway<br>
+                A book is like a garden carried in the pocket." - Chinese Proverb <br>
+            </p>
+        </div>
+    </div>
+    <h1 class="h1">whyChoseUs</h1>
+    <div class="whyChooseUsContainer">
+        <div id="WHyChoseUs"> 
+        <div>
+            <img src="https://i.ibb.co/SrRj4Zv/why.png" alt="why" />
+        </div>
+        <p class="zz">
+            Our track record speaks volumes – we're the trusted choice for those who demand nothing less than the best.<br><br>
+            We're not just a service provider; we're your growth partner, here to empower your future.<br><br>
+            Choose us, and you'll discover the perfect blend of creativity, professionalism, and a relentless pursuit of perfection.
+        </p>
+        </div>
+    </div>
+    
+ <script>
+    let searchItem = document.getElementById('searchItem');
+    let cardContainer = document.getElementById("cardContainer")
+    let BookContainer = document.getElementById("BookContainer")
+    
+// start showing Books to Home Page//
+    function displayingToHomePage(book){
+        let {title,author,imageLink} = book
 
-let deletePost = (deleteIcon) => {
-    deleteIcon.parentElement.parentElement.remove();
-};
+        //creating book-container
 
-let editPost = (edit) => {
-    input.value = edit.parentElement.previousElementSibling.innerHTML;
-    edit.parentElement.parentElement.remove();
-};
-    </script>
+        let bookContainer = document.createElement("div")
+        bookContainer.classList.add('book-container')
+
+        let image = document.createElement('img')
+
+        let discriptionContaier = document.createElement('div')
+        discriptionContaier.classList.add("discription-container")
+
+        let TITLE = document.createElement('h3')
+        let AUTHOR = document.createElement('p')
+
+        image.src=imageLink
+        image.classList.add("image")
+
+        TITLE.textContent= "TITLE : "+ title
+        TITLE.style.margin="10px"
+        TITLE.style.padding="10px"
+
+        AUTHOR.textContent= "AUTHOR : " + author
+        
+        bookContainer.appendChild(image)
+        bookContainer.appendChild(discriptionContaier)
+
+        discriptionContaier.appendChild(TITLE)
+        discriptionContaier.appendChild(AUTHOR)
+        BookContainer.appendChild(bookContainer)
+    
+    }
+//----here end of showing Books-----//
+
+
+//--  starting display Books---- //
+    function displayBooks(search_results){
+        if(search_results && search_results.length>0){
+        let book = search_results[0]
+        console.log(book)
+        displayingToHomePage(book)
+        message.style.display='none'
+
+        }else{
+            let errorMsg = document.getElementById('message')
+            message.textContent ='No Book Found, Click Get Book'
+            message.style.display='block'
+        }
+         
+    }
+
+//-- ending display Books -----------//
+
+    function search(event){
+        let userText = searchItem.value
+        if(event.key==="Enter"){
+            searchItem.value=" "
+            let Loading = document.getElementById('loading')
+            loading.style.display='block'
+
+            let options = {
+                method:"GET",
+            }
+            fetch("https://apis.ccbp.in/book-store?title=" + userText, options)
+            .then(function(response){
+                return response.json()
+            })
+            .then(function(Books){
+                console.log(Books)
+                let {search_results} = Books
+                displayBooks(search_results)
+                loading.style.display="none"
+                
+            })
+        }
+    }
+
+    searchItem.addEventListener("keydown", search)
+//---get your Book ------//
+
+let getBook = document.getElementById("getBook");
+let form = document.getElementById("form");
+
+getBook.onclick = function(){
+    form.style.display="block"
+}
+
+ </script>
 </body>
 </html>
